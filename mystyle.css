@@ -1,0 +1,286 @@
+/* AMARA TARIQ */
+/* mystyle.css */
+
+.personalLogo {
+    width:125px;
+    height: auto;
+}
+
+.navigation{
+    overflow: hidden;
+    background-color: #53d3c9;
+}
+
+.navigation a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+  
+.dropdown .dropdownbutton {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+  
+.navbar a:hover, .dropdown:hover .dropdownbutton {
+    background-color:#84e1e1;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.selfie{
+    border-radius: 50%;
+    width: 250px;
+    height: 350px;
+    float: left;
+}
+
+.socialLogos{
+    width: 35px;
+    height: auto;
+    float: bottom:
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 2px;
+    background-color: #53d3c9;
+    color: white;
+}
+
+/* ------ IMAGE GALLERY CSS------- */
+
+.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 200px;
+}
+  
+.gallery:hover {
+    border: 1px solid #777;
+}
+  
+.gallery-images{
+    width: 25%;
+    height: auto;
+    float: center;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    float: center;
+}
+  
+.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+/* ------- GAME PROJECTS CSS------- */
+
+.project {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 100%;
+}
+
+.project-image{
+    width: 25%;
+    height: auto;
+    float: center;
+}
+
+.project-info{
+    padding: 15px;
+    float: right;
+}
+
+/* ----- SHOP CSS ----- */
+
+.image-container {
+    position: relative;
+    width: 25%;
+
+    float: left;
+    padding: 25px;
+}
+  
+.ShopTypes {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+  
+.image-container:hover .overlay {
+    opacity: 1;
+}
+  
+.hover-text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* ----- COMMISSION CSS -----*/
+
+.commission-expl {
+    float: top right;
+}
+
+.commission-container{
+    position: relative;
+    width: 25%;
+
+    float: right;
+    padding: 25px;
+}
+
+.test{
+    float: left;
+}
+
+/*---- LOGIN/SIGNUP CSS ----*/
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #46867e;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #646992;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+  background-color:#f1f1f1;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+.form-style{
+    border:1px solid #ccc;
+}
+
+.checkbox-style{
+    margin-bottom:15px;
+}
+
+terms-style{
+    color:dodgerblue;
+}
