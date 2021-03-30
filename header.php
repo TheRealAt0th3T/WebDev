@@ -23,7 +23,7 @@
 				</div>
 			</div>--->
 			<a href="/resume.pdf">Resume</a>
-            <a href="/comments.php">Comments</a>
+            <a href="/comments.php">Commissions</a>
 			<div class="dropdown">
 				<button class="dropdownbutton">Account</button>
 				<div class="dropdown-content">

@@ -80,15 +80,6 @@ class Dao {
         }
   }
 
-  public function deleteComment ($id) {
-    $this->logger->LogInfo("deleting comment id [{$id}]");
-    $conn = $this->getConnection();
-    $deleteQuery = "delete from comment where comment_id = :id";
-    $q = $conn->prepare($deleteQuery);
-    $q->bindParam(":id", $id);
-    $q->execute();
-  }
-
   public function insertComment ($name, $comment, $imagePath) {
     //$this->logger->LogInfo("inserting a comment name=[{$name}], comment=[{$comment}]");
     $conn = $this->getConnection();
@@ -100,7 +91,7 @@ class Dao {
     $q->execute();
   }
 
-  public function getComments () {
+  public function getCommission() {
     $connection = $this->getConnection();
     try {
         $rows = $connection->query("select name, comment_id, comment, image_path, date_entered from comment order by date_entered desc", PDO::FETCH_ASSOC);

@@ -2,6 +2,16 @@
 <!-- login.html -->
 <!-- LOGIN PAGE -->
 <html>
+
+<?php
+    if (isset($_SESSION['authenticated'])) {
+        if($_SESSION['authenticated']) {
+          header('Location: index.php');
+            exit;
+        } 
+    }
+    ?>
+
 	<head>
 		<link rel="stylesheet" href="mystyle.css">
 		<?php
